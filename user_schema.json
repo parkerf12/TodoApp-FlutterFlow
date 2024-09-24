@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "User Document",
+  "properties": {
+    "birthday": {
+      "type": "string",
+      "format": "date-time",
+      "description": "User's birthday as a timestamp."
+    },
+    "created_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp of when the user was created."
+    },
+    "display_name": {
+      "type": "string",
+      "description": "User's display name."
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "User's email address."
+    },
+    "photo_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the user's profile photo."
+    },
+    "uid": {
+      "type": "string",
+      "description": "Unique identifier for the user."
+    }
+  },
+  "required": ["created_time", "display_name", "email", "uid"]
+}
