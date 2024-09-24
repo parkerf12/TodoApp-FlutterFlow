@@ -128,7 +128,7 @@ class _CompletedWidgetState extends State<CompletedWidget> {
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
                       child: Text(
-                        'Completed',
+                        'Completed Tasks',
                         style: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .override(
